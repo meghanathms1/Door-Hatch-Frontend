@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_with_the_carrier_battle_group.jpg/1280px-INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_with_the_carrier_battle_group.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.heading {
+  margin: 0;
+  color: #e3f2fd;
+}
+
+.Main {
+  background-color: rgba(18, 26, 26, 0.492);
+  width: 90vw;
+  margin: auto;
+  height: 85vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.Buttons button {
+  background-color: rgb(0 106 172);
+  border-radius: 5px;
+  color: white;
+  width: 110px;
+  height: 60px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+#accept-button {
+  background: rgb(27, 238, 7);
+}
+#accept-button:hover {
+  background: rgb(238, 165, 7);
+}
+table {
+  background-color: rgb(255, 255, 255);
+}
+.zones {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+tr:nth-child(even) {
+  background-color: rgb(69, 147, 196);
+  color: rgb(255, 255, 255);
+}
+.tables {
+  margin: 10px;
+  margin-top: 15px;
+  text-align: left;
+  width: 25%;
+  padding: 0;
+  border-radius: 7px;
+}
+.tables h1 {
+  text-align: center;
+  color: white;
+  background: rgb(0 106 172);
+}
+.status {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+@media only screen and (max-width: 1344px) {
+  .Buttons button {
+    background-color: rgb(0 106 172);
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 70px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .Buttons button {
+    width: 90px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 1186px) {
+  .Buttons button {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .Buttons button {
+    width: 75px;
+    height: 50px;
+  }
+  table {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .Buttons button {
+    width: 70px;
+    height: 50px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .Buttons {
+    flex-wrap: wrap;
+  }
+
+  .Main {
+    justify-content: space-around;
+  }
+}
+
+
+@media only screen and (max-width: 930px) {
+  table {
+    font-size: 10px;
+  }
+}
