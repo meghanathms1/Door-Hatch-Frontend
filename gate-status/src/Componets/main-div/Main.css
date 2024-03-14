@@ -1,0 +1,25 @@
+.Main {
+    background-color: rgba(18, 26, 26, 0.492);
+    width: 90vw;
+    margin: auto;
+    height: 85vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  @media only screen and (max-width: 930px){
+    .Main {
+        justify-content: space-around;
+      }
+  }
+
+  .zones {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
