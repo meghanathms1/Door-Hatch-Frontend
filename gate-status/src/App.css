@@ -5,12 +5,12 @@
 }
 .App {
   text-align: center;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_with_the_carrier_battle_group.jpg/1280px-INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_with_the_carrier_battle_group.jpg");
+  background-image: url("./Assets/shipimage.jpg");
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 15px;
 }
 
 .heading {

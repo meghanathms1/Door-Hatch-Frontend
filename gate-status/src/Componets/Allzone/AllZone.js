@@ -1,210 +1,89 @@
 import React from 'react'
 import "./AllZone.css"
+import warningIcon from "../../Assets/warning.png"
 
-const AllZone = () => {
+const AllZone = ({door_statuses}) => {
   return (
     <>
-              <table className="tables">
-            <tr>
-              <td colspan="2">
-                <h1>Zone 1</h1>
-              </td>
-            </tr>
 
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open </td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+<div className='tableBox'>
+  {Object.entries(door_statuses).map(([zone, doors], index) => (
+    index < 3 && (
+      <>
+        <table className="tables" key={zone}>
+          <tr>
+            <td colSpan="2">
+              <h2>{zone}</h2>
+            </td>
+          </tr>
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 2</h1>
-              </td>
+          {Object.entries(doors).map(([door, status]) => (
+            <tr key={`${zone}-${door}`}>
+              <td>{door}</td>
+              <td className="status">{status === 1 ? <p className='open-status'>Open</p> : status === 0 ?  <p className='close-status'>Close</p> :<img src={warningIcon} className="warning-icon" alt="Warning"/>}</td>
             </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status"> Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+          ))}
+        </table>
+      </>
+    )
+  ))}
+</div>
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 3</h1>
-              </td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status"> Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+<div className='tableBox'>
+  {Object.entries(door_statuses).map(([zone, doors], index) => (
+    index >= 3 && index < 5 && (
+      <>
+        <table className="tables" key={zone}>
+          <tr>
+            <td colSpan="2">
+              <h2>{zone}</h2>
+            </td>
+          </tr>
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 4</h1>
-              </td>
+          {Object.entries(doors).map(([door, status]) => (
+            <tr key={`${zone}-${door}`}>
+              <td>{door}</td>
+              <td className="status">{status === 1 ? <p className='open-status'>Open</p>: status === 0 ?  <p className='close-status'>Close</p> : <img src={warningIcon} className="warning-icon" alt="Warning"/>}</td>
             </tr>
+          ))}
+        </table>
+      </>
+    )
+  ))}
+</div>
 
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+<div className='tableBox'>
+  {Object.entries(door_statuses).map(([zone, doors], index) => (
+    index >= 5 && index < 9 && (
+      < >
+        <table className="tables" key={zone}>
+          <tr>
+            <td colSpan="2">
+              <h2>{zone}</h2>
+            </td>
+          </tr>
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 5</h1>
-              </td>
+          {Object.entries(doors).map(([door, status]) => (
+            <tr key={`${zone}-${door}`}>
+              <td>{door}</td>
+              <td className="status">{status === 1 ? <p className='open-status'>Open</p> : status === 0 ? <p className='close-status'>Close</p> :<img src={warningIcon} className="warning-icon" alt="Warning"/>}</td>
             </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 2834</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+          ))}
+        </table>
+      </>
+    )
+  ))}
+</div>
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 6</h1>
-              </td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+              
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 7</h1>
-              </td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>
+          
+          
 
-          <table className="tables">
-            <tr>
-              <td colspan="10">
-                <h1>Zone 8</h1>
-              </td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-            <tr>
-              <td>CHART MAGAZINE 234</td>
-              <td className="status">Open</td>
-            </tr>
-          </table>       
+          
+
+
+          
                      
     </>
   )

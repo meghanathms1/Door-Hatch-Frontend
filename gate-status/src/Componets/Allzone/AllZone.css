@@ -8,12 +8,15 @@
     margin: 10px;
     margin-top: 15px;
     text-align: left;
-    width: 25%;
+    width: 100%;
     padding: 0;
-    border-radius: 7px;
-    background: white;
+    
+    background: #f7f7f7;
+    font-weight: 500;
+    
+    
   }
-  .tables h1 {
+  .tables h2 {
     text-align: center;
     color: white;
     background: rgb(0 106 172);
@@ -22,3 +25,46 @@
     text-align: center;
     color: rgb(255, 0, 0);
   }
+.tableBox{
+  width: 450px;
+  margin: 10px;
+  
+}
+.open-status{
+  color:#ffffff;
+  background: red;
+}
+.close-status{
+  color:#000000;
+  background: rgb(94, 255, 0);
+}
+@media only screen and (max-width: 1505px) {
+  .tableBox{
+    
+    width: 400px;
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 1351px) {
+  tr{
+    height: 15px;
+  }
+  .tableBox{
+    
+   
+    font-size: small;
+  }
+}
+.warning-icon{
+  animation: blink .9s infinite;
+  width: 23px;
+}
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
