@@ -8,13 +8,13 @@
 .box {
   margin: 10px;
   width: 300px;
-  height: 150px;
+  height: 187px;
   background: white;
   border-radius: 10px;
   
 }
 .inner-box {
-  width: 273px;
+  width: 173px;
   height: 116px;
   background: rgb(0 62 255);
   border-radius: 10px;

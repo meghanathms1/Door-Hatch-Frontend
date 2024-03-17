@@ -35,8 +35,8 @@
   background: red;
 }
 .close-status{
-  color:#000000;
-  background: rgb(94, 255, 0);
+  color:#ffffff;
+  background: rgb(59 153 24);
 }
 @media only screen and (max-width: 1505px) {
   .tableBox{

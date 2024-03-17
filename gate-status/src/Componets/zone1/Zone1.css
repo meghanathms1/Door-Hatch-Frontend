@@ -9,7 +9,7 @@
 .box{
     margin: 10px;
     width:350px;
-    height: 167px;
+    height: 186px;
     background: white;
     border-radius: 10px;
     padding: 12px;
@@ -28,6 +28,39 @@
     justify-content: center;
 
 }
+.warning{
+    width: 325px;
+    height: 125px; 
+    background: orange;
+    ;
+    border-radius: 10px;
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;}
+.close{
+    width: 325px;
+    height: 125px; 
+    background: rgb(59 153 24);
+    border-radius: 10px;
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.open{
+    width: 325px;
+    height: 125px; 
+    background: rgb(238 44 44);
+    border-radius: 10px;
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
 .inner-box h1{
     color: aqua;
 }
@@ -44,9 +77,11 @@
         height: 116px; 
     
     }
-    .inner-box h1{
-        color: aqua;
+    .warning, .close , .open{
+        width: 273px;
+        height: 116px; 
     }
+    
   }
 
   @media only screen and (max-width: 1270px) {
@@ -61,9 +96,12 @@
         height: 100px; 
     
     }
-    .inner-box h1{
-        color: aqua;
+    .warning, .close , .open{
+        width: 227px;
+        height: 100px; 
     }
+    
+ 
   }
 
   @media only screen and (max-width: 1102px) {
@@ -78,7 +116,23 @@
         height: 100px; 
     
     }
-    .inner-box h1{
-        color: aqua;
+    .warning, .close , .open{
+        width: 179px;
+        height: 100px; 
     }
+    
+  }
+ 
+  .warning-icon-zone{
+    animation: blink .9s infinite;
+    width: 50px;
+    
+  }
+  
+  
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
   }
