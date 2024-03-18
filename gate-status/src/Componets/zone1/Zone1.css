@@ -16,6 +16,7 @@
     
     
 }
+
 .inner-box{
     width: 325px;
     height: 125px; 
@@ -30,7 +31,7 @@
 }
 .warning{
     width: 325px;
-    height: 125px; 
+    height: 113px; 
     background: orange;
     ;
     border-radius: 10px;
@@ -41,7 +42,7 @@
     flex-direction: column !important;}
 .close{
     width: 325px;
-    height: 125px; 
+    height: 113px; 
     background: rgb(59 153 24);
     border-radius: 10px;
     margin:  auto;
@@ -52,7 +53,7 @@
 }
 .open{
     width: 325px;
-    height: 125px; 
+    height: 113px; 
     background: rgb(238 44 44);
     border-radius: 10px;
     margin:  auto;

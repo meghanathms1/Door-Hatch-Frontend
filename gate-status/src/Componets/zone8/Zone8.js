@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Zone8.css"
-import warningIcon from "../../Assets/warning.png"
+import warningIcon from "../../Assets/warning1.png"
 import door_statuses  from "../../Data/data";
 
 const Zone8 = () => {
